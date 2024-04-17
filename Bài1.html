@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bài1.css">
+    
+</head>
+<body>
+    <div class='box'>
+    <div class="CALCULATOR">
+        <h1>Calculator</h1>
+        <form onsubmit="submitForm(event)">
+            <input type="number" id="inputA" placeholder="Enter number A" required>
+            <input type="number" id="inputB" placeholder="Enter number B" required>
+            <div class="buttons">
+                <button type="button" onclick="calculate('sum')">SUM</button>
+                <button type="button" onclick="calculate('subtract')">SUBTRACT</button>
+                <button type="button" onclick="calculate('multiply')">MULTIPLY</button>
+                <button type="button" onclick="calculate('divide')">DIVIDE</button>
+                <button type="button" onclick="resetInputs()">RESET</button>
+    </div>
+                
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="bài1.js"></script>
+</body>
+</html>
